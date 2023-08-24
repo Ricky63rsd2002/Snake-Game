@@ -152,7 +152,6 @@ def gameloop():
                del snk_list[0]
            if head in snk_list[:-1]:
                game_over = True
-               pygame.mixer.music.load("resources/crash.mp3")
 
            if snake_x<0 or snake_x>screen_width or snake_y<0 or snake_y>screen_height:
                game_over = True
